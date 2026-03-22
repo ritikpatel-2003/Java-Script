@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Practice-Set 3</title>
+
+    <style>
+        .first-button{
+            border-radius: 10px;
+            width: 100px;
+            height: 30px;
+            border: none;
+            background-color: aquamarine;
+        }
+        .second-button{
+             border-radius: 10px;
+             width: 150px;
+             background-color: gainsboro;
+             
+            height: 30px;
+            margin-left: 15px;
+            border: solid black;
+        }
+        .third-button{
+             border-radius: 10px;
+             width: 150px;
+             background-color: aquamarine;
+             
+            height: 30px;
+            margin-left: 15px;
+            border: solid black;
+        }
+    </style>
+
+</head>
+<body>
+   <button class = "first-button" onclick=" cartquantity +=1; document.querySelector('#cart-summary').
+       innerText =`Your Bag has ${cartquantity} items `"">Add to Bag</button>
+
+  <button class = " second-button" onclick=" cartquantity -=1; document.querySelector('#cart-summary').
+       innerText =`Your Bag has ${cartquantity} items `" > ❤️ Wishlist</button>
+  <Button class = " third-button" onclick="cartquantity +=2;document.querySelector('#cart-summary').
+       innerText =`Your Bag has ${cartquantity} items `">Add 1+1 Sale item</Button>
+   
+  <h2 id = "cart-summary"></h2>
+
+    <script>
+       let cartquantity = 0; 
+       document.querySelector('#cart-summary').
+       innerText =`Your Bag has ${cartquantity} items `
+    </script>
+</body>
+</html>  
