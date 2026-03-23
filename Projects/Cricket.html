@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cricket-Game</title>
+    <link rel="stylesheet" href="Cricket.css">
+</head>
+<body>
+    <h1 class = "Heading">Bat Ball Stump Game </h1>
+     <div class = "Buttons">
+    <button onclick="console.log(' You chossen the Bat ');
+    //  Guessing the choice of computer
+    let computerGuess = Math.random() * 3
+    // console.log(computerGuess)
+
+    if (computerGuess > 0 & computerGuess < 1 ){
+    console.log('Computer Guess is Bat')
+    alert('Draw')
+    }
+    else if (computerGuess > 1 & computerGuess < 2 ){
+    console.log('Computer Guess is Ball')
+    alert('yessss! You Win')
+    }
+    else if (computerGuess > 2 & computerGuess < 3 ){
+    console.log('Computer Guess is Wicket')
+    alert('ohhhhh! You Loose')
+    }">Bat</button>
+
+
+    <button onclick="console.log('You Choosen the Ball');
+     let computerguess = Math.random() * 3
+    // console.log(computerguess)
+    
+// Creating the Condition For the Game 
+    if (computerguess > 0 & computerguess < 1 ){
+    console.log('Computer Guess is Bat')
+    alert('ohhhhh! You Loose')
+    }
+    else if (computerguess > 1 & computerguess < 2 ){
+    console.log('Computer Guess is Ball')
+    alert('Draw')
+    }
+    else if (computerguess > 2 & computerguess < 3 ){
+    console.log('Computer Guess is Wicket')
+    alert('yessss! You Win')
+    }">Ball</button>
+
+
+    <button onclick="console.log('You Choosen the Wicket')
+    let Computerguess = Math.random()*3
+    // console.log(Computerguess)
+// Creating the Condition For the Game 
+   if (Computerguess>0 & Computerguess<1){
+    console.log('Computer Choice is Wicket')
+    alert('Match Drawn')
+    }
+
+    else if (Computerguess>1 & Computerguess<2){
+    console.log('Computer Choice is Bat')
+    alert('Yess! You Win ')
+    }
+     
+    else if (Computerguess>2 & Computerguess<3){
+    console.log('Computer Choice is Ball')
+    alert('ohhhh! you loose ')
+    }
+    
+    ">Wicket</button>
+    </div>
+</body>
+</html>
