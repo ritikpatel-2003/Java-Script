@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSON</title>
+</head>
+<body>
+    <script>
+        let product = {
+            name : 'ritik',
+            surname: 'patel',
+
+           physical:{
+            height_in_feet: 6,
+            Weight_in_kg:73,
+           },
+
+        };
+
+        console.log(typeof product);
+        console.log(product);
+
+        // Converting the data into string
+
+        let newProduct =JSON.stringify(product);
+        console.log(typeof  newProduct);
+        console.log(newProduct);
+
+        // Converting String into objects
+
+        let obj = JSON.parse(newProduct);
+        console.log(typeof obj)
+        console.log(obj)
+    </script>
+</body>
+</html>

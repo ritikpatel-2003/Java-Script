@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Local-Storage</title>
+</head>
+<body>
+    <Script>
+        let store = {
+            Name : 'Ritik',
+            last_Name: 'Patel',
+            Roll_No: 'Betn1cs23231',
+            Sec: 'C',
+            University: 'ITM University Gwalior',
+
+        };
+
+        localStorage.setItem('store', JSON.stringify(store))
+        console.log(localStorage.getItem('store'))
+
+        // Again Coverting the value in the object form 
+
+        let store_2 = JSON.parse(localStorage.getItem('store'));
+        console.log(store_2)
+    </Script>
+</body>
+</html>
